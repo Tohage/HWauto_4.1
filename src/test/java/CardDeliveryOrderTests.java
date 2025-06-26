@@ -34,7 +34,7 @@ public class CardDeliveryOrderTests {
     void fieldsAreFilledCorrectly() {
         $("[placeholder='Город']").setValue("Волгоград");
         $("[data-test-id='date'] .input__control").click();
-        $("[data-test-id='date'] .input__control").sendKeys(Keys.CONTROL + "A");
+        $("[data-test-id='date'] .input__control").sendKeys(Keys.COMMAND + "A");
         $("[data-test-id='date'] .input__control").sendKeys(BACK_SPACE);
         $("[data-test-id='date'] .input__control").setValue(dataGenerate(3));
         $("[name='name']").setValue("Иванов Иван");
